@@ -40,15 +40,15 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="text-white mt-0">We've got what you need!</h2>
+                <h2 className="text-white mt-0">About Me</h2>
                 <hr className="divider light my-4"/>
                 <p className="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up
                   and
                   running in no time! Choose one of our open source, free to download, and easy to use themes! No
                   strings
                   attached!</p>
-                <a className="btn btn-light btn-xl js-scroll-trigger" href="#services"
-                   onClick={Scroller.handleAnchorScroll}>Get Started!</a>
+                <a className="btn btn-light js-scroll-trigger" href="#services"
+                   onClick={Scroller.handleAnchorScroll}>Languages and Frameworks</a>
               </div>
             </div>
           </div>
@@ -56,14 +56,16 @@ export default class IndexPage extends React.Component {
 
         <section className="page-section" id="services">
           <div className="container">
-            <h2 className="text-center mt-0">At Your Service</h2>
+            <h2 className="text-center mt-0">Languages and Frameworks</h2>
             <hr className="divider my-4"/>
             <div className="row">
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-gem text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Sturdy Themes</h3>
-                  <p className="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                  <i className="fas fa-4x fa-language text-primary mb-4"></i>
+                  <h3 className="h4 mb-2">Languages and Frameworks</h3>
+                  <p className="text-muted mb-0">HTML5</p>
+                  <p className="text-muted mb-0">CSS3</p>
+                  <p className="text-muted mb-0">Javascript</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -95,27 +97,27 @@ export default class IndexPage extends React.Component {
           <div className="container-fluid p-0">
             <div className="row no-gutters">
               <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/crudresize.png" onClick={this.handlePortfolioClick.bind(this, 0)}>
+                  <a href="https://mighty-sierra-51681.herokuapp.com/" target="-blank">
+                    <h6>MERN Project</h6>
+                  </a>
+                <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
                   <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      A project I created using Mongo DB, Express, React JS and Node JS
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
+                  <a href="https://cvan23.github.io/portfolio-5/" target="-blank">
+                    <h6>Bootstrap Portfolio Project</h6>
+                  </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/2.jpg" onClick={this.handlePortfolioClick.bind(this, 1)}>
                   <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      A starter portfolio project I built using Bootstrap, HTML5 and CSS3
                     </div>
                   </div>
                 </a>
@@ -176,10 +178,10 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
 
-        <section className="page-section bg-dark text-white">
+        <section className="page-section bg-dark text-white" id="resume">
           <div className="container text-center">
-            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-            <a className="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+            <h2 className="mb-4">Resume</h2>
+            <a className="btn btn-light" href="https://drive.google.com/file/d/1OKzBvVhTLSOkKz3AJRP1myOn8Na5JgV3/view?usp=sharing" target="-blank">Download Resume</a>
           </div>
         </section>
 
@@ -189,19 +191,16 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-8 text-center">
                 <h2 className="mt-0">Let's Get In Touch!</h2>
                 <hr className="divider my-4"/>
-                <p className="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an
-                  email
-                  and we will get back to you as soon as possible!</p>
+                <p className="text-muted mb-5">Connect on Linkedin or send an email and I will get back to you as soon as possible!</p>
               </div>
             </div>
             <div className="row">
               <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
+                <a class="btn btn-social-icon btn-google" href="https://www.linkedin.com/in/chris-van-huffel-34330266/" target="-blank"><i class="fab fa-linkedin-in fa-3x text-muted"></i></a>
               </div>
               <div className="col-lg-4 mr-auto text-center">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a className="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <a className="d-block text-muted" href="mailto:cvanhuffel@outlook.com">cvanhuffel@outlook.com</a>
               </div>
             </div>
           </div>
@@ -217,7 +216,7 @@ export default class IndexPage extends React.Component {
 
 export const imageData = graphql`
   query {
-    images: allFile(filter: {relativePath: {glob: "portfolio/fullsize/*.jpg"}}, sort: {fields: name}) {
+    images: allFile(filter: {relativePath: {glob: "portfolio/fullsize/*"}}, sort: {fields: name}) {
       edges {
         node {
           childImageSharp {

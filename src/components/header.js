@@ -26,10 +26,13 @@ export default class Header extends React.Component {
                     <Nav.Link className={"js-scroll-trigger"} href="#about" onClick={Scroller.handleAnchorScroll}>About</Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#services" onClick={Scroller.handleAnchorScroll}>Services</Nav.Link>
+                    <Nav.Link className={"js-scroll-trigger"} href="#services" onClick={Scroller.handleAnchorScroll}>Skills</Nav.Link>
                   </li>
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} href="#portfolio" onClick={Scroller.handleAnchorScroll}>Portfolio</Nav.Link>
+                  </li>
+                  <li className="nav-item">
+                    <Nav.Link className={"js-scroll-trigger"} href="#resume" onClick={Scroller.handleAnchorScroll}>Resume</Nav.Link>
                   </li>
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} href="#contact" onClick={Scroller.handleAnchorScroll}>Contact</Nav.Link>
@@ -48,7 +51,13 @@ export default class Header extends React.Component {
               </div>
               <div className="col-lg-8 align-self-baseline">
                 <h1 className="text-uppercase text-white font-weight-bold">Full Stack Web Developer</h1>
-                <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Find Out More</a>
+                <div class="col mt-5 mb-5">
+                  <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/channel/UCXtUD96KKI0BzKveCgGS2_w?view_as=subscriber" target="-blank"><i class="fab  fa-youtube fa-2x"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://github.com/Cvan23" target="-blank"><i class="fab fa-github fa-2x"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://www.linkedin.com/in/chris-van-huffel-34330266/" target="-blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://codepen.io/cvancat" target="-blank"><i class="fab fa-codepen fa-2x"></i></a>
+                </div>
+                <a className="btn btn-primary js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>About Me</a>
               </div>
             </div>
           </div>
