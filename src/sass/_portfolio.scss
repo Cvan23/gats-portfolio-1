@@ -1,7 +1,10 @@
 // Styling for the portfolio section
 #portfolio {
-	.container-fluid {
+	.container-fluid, h5 {
+		background-color: rgb(199, 196, 200);
 		max-width: 1920px;
+		font-weight: bolder;
+		
 		.portfolio-box {
 			position: relative;
 			display: block;

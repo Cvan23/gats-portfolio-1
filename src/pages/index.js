@@ -42,13 +42,11 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-8 text-center">
                 <h2 className="text-white mt-0">About Me</h2>
                 <hr className="divider light my-4"/>
-                <p className="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up
-                  and
-                  running in no time! Choose one of our open source, free to download, and easy to use themes! No
-                  strings
-                  attached!</p>
+                <p className="text-white-75 mb-4">Hello and welcome to my portfolio page!</p>
+                <p className="text-white-75 mb-4">I am a full-stack developer with a passion for coding. I love building and creating new projects, and am committed to learning and improving my skills.</p>
+                <p className="text-white-75 mb-4">I am currently residing in Spokane, WA with my wife and our cat <i class="fas fa-cat ml-1"></i>, and am looking forward to new opportunities!</p>
                 <a className="btn btn-light js-scroll-trigger" href="#services"
-                   onClick={Scroller.handleAnchorScroll}>Languages and Frameworks</a>
+                   onClick={Scroller.handleAnchorScroll}>Skills</a>
               </div>
             </div>
           </div>
@@ -56,37 +54,41 @@ export default class IndexPage extends React.Component {
 
         <section className="page-section" id="services">
           <div className="container">
-            <h2 className="text-center mt-0">Languages and Frameworks</h2>
+            <h2 className="text-center mt-0">Languages, Frameworks and Dev Tools</h2>
             <hr className="divider my-4"/>
             <div className="row">
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-language text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Languages and Frameworks</h3>
+                  <i className="fab fa-4x fa-js-square text-primary mb-4"></i>
                   <p className="text-muted mb-0">HTML5</p>
                   <p className="text-muted mb-0">CSS3</p>
                   <p className="text-muted mb-0">Javascript</p>
+                  <p className="text-muted mb-0">Bootstrap</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Up to Date</h3>
-                  <p className="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                  <i className="fab fa-4x fa-react text-primary mb-4"></i>
+                  <p className="text-muted mb-0">React JS</p>
+                  <p className="text-muted mb-0">React Native</p>
+                  <p className="text-muted mb-0">Expo</p>
+                  <p className="text-muted mb-0">Android Studio</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-globe text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Ready to Publish</h3>
-                  <p className="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                  <i className="fab fa-4x fa-npm text-primary mb-4"></i>
+                  <p className="text-muted mb-0">NPM</p>
+                  <p className="text-muted mb-0">GIT</p>
+                  <p className="text-muted mb-0">Webpack</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-heart text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Made with Love</h3>
-                  <p className="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                  <i className="fab fa-4x fa-node text-primary mb-4"></i>
+                  <p className="text-muted mb-0">Node JS</p>
+                  <p className="text-muted mb-0">Express</p>
+                  <p className="text-muted mb-0">Mongo DB</p>
                 </div>
               </div>
             </div>
@@ -98,78 +100,78 @@ export default class IndexPage extends React.Component {
             <div className="row no-gutters">
               <div className="col-lg-4 col-sm-6">
                   <a href="https://mighty-sierra-51681.herokuapp.com/" target="-blank">
-                    <h6>MERN Project</h6>
+                    <h5 className="mt-2">MERN Project<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
                   <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
                     <div className="project-name">
-                      A project I created using Mongo DB, Express, React JS and Node JS
+                      A project I built and deployed using Mongo DB, Express, React JS and Node JS
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
                   <a href="https://cvan23.github.io/portfolio-5/" target="-blank">
-                    <h6>Bootstrap Portfolio Project</h6>
+                  <h5 className="mt-2">Bootstrap Project<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/2.jpg" onClick={this.handlePortfolioClick.bind(this, 1)}>
                   <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
                     <div className="project-name">
-                      A starter portfolio project I built using Bootstrap, HTML5 and CSS3
+                      A starter portfolio project I built and deployed using Bootstrap, HTML5 and CSS3
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
+                  <a href="https://github.com/Cvan23/calorie-tracker" target="-blank">
+                  <h5 className="mt-2">Calorie Tracker Project<i class="fas fa-file-code ml-2"></i></h5>
+                  </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/3.jpg" onClick={this.handlePortfolioClick.bind(this, 2)}>
                   <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      Calorie Tracker project using Javascript and Materialize CSS
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
+                  <a href="https://www.youtube.com/watch?v=jX1ZJ6SBNWk&t=12s" target="-blank">
+                  <h5 className="mt-2">React JS Project<i class="fas fa-file-code ml-2"></i></h5>
+                  </a>
                 <a className="portfolio-box" href="images/portfolio/fullsize/4.jpg" onClick={this.handlePortfolioClick.bind(this, 3)}>
                   <Img fluid={this.props.data.images.edges[3].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      A project for a mock rescue cat cafe using React JS and Reactstrap
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
+                  <a href="https://github.com/Cvan23/micro-crud" target="-blank">
+                  <h5 className="mt-2">CRUD App with Webpack<i class="fas fa-file-code ml-2"></i></h5>
+                  </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/5.jpg" onClick={this.handlePortfolioClick.bind(this, 4)}>
                   <Img fluid={this.props.data.images.edges[4].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      A Micropost CRUD app using REST API, ES6 Modules and Webpack
                     </div>
                   </div>
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
+                  <a href="https://github.com/Cvan23/weather-api-app" target="-blank">
+                  <h5 className="mt-2">Weather API App<i class="fas fa-file-code ml-2"></i></h5>
+                  </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/6.jpg" onClick={this.handlePortfolioClick.bind(this, 5)}>
                   <Img fluid={this.props.data.images.edges[5].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption p-3">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
                     <div className="project-name">
-                      Project Name
+                      A weather app using OpenWeather API, Javascript and Bootstrap Swatch
                     </div>
                   </div>
                 </a>
@@ -181,7 +183,7 @@ export default class IndexPage extends React.Component {
         <section className="page-section bg-dark text-white" id="resume">
           <div className="container text-center">
             <h2 className="mb-4">Resume</h2>
-            <a className="btn btn-light" href="https://drive.google.com/file/d/1OKzBvVhTLSOkKz3AJRP1myOn8Na5JgV3/view?usp=sharing" target="-blank">Download Resume</a>
+            <a className="btn btn-light" href="https://drive.google.com/file/d/1OKzBvVhTLSOkKz3AJRP1myOn8Na5JgV3/view?usp=sharing" target="-blank">Click to view or download resume</a>
           </div>
         </section>
 
