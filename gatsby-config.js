@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/gatsby-creative`,
   siteMetadata: {
     title: `Chris Van Huffel`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Full Stack Web Developer`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -36,6 +36,13 @@ module.exports = {
           families: ['Merriweather:400,300,300italic,400italic,700,700italic', 'Merriweather+Sans:400,700']
         }
       }
+    },
+
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
