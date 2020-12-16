@@ -44,6 +44,7 @@ export default class IndexPage extends React.Component {
                 <hr className="divider light my-4"/>
                 <p className="text-white-75 mb-4">Hello and welcome to my portfolio page!</p>
                 <p className="text-white-75 mb-4">I am a full-stack developer with a passion for coding. I love building and creating new projects, and am committed to learning and improving my skills.</p>
+                <p className="text-white-75 mb-4">I’m currently seeking a front-end or full-stack web development opportunity, and am also available for freelance projects. I am experienced with HTML, CSS, Javascript, React & React Native, NodeJS, Express, MongoDB and Bootstrap. I also have familiarity with various middle-wares, NPM, GIT, CLI and other development tools.</p>
                 <p className="text-white-75 mb-4">I am currently residing in Spokane, WA with my wife and our cat <i class="fas fa-cat ml-1"></i>, and am looking forward to new opportunities!</p>
                 <a className="btn btn-light js-scroll-trigger" href="#services"
                    onClick={Scroller.handleAnchorScroll}>Skills</a>
@@ -81,6 +82,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">NPM</p>
                   <p className="text-muted mb-0">GIT</p>
                   <p className="text-muted mb-0">Webpack</p>
+                  <p className="text-muted mb-0">Gatsby JS</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -89,6 +91,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">Node JS</p>
                   <p className="text-muted mb-0">Express</p>
                   <p className="text-muted mb-0">Mongo DB</p>
+                  <p className="text-muted mb-0">Graph QL</p>
                 </div>
               </div>
             </div>
@@ -125,14 +128,15 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
-                  <a href="https://github.com/Cvan23/calorie-tracker" target="-blank">
-                  <h5 className="mt-2">Calorie Tracker Project<i class="fas fa-file-code ml-2"></i></h5>
+                  <a href="https://www.myfavorite-letter.com/" target="-blank">
+                  <h5 className="mt-2">Promotional Website<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/3.jpg" onClick={this.handlePortfolioClick.bind(this, 2)}>
                   <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
                     <div className="project-name">
-                      Calorie Tracker project using Javascript and Materialize CSS
+                      A simple promotional website I built and deployed for a client.
+                      I used Gatsby JS with GraphQl to optimize and display the images.
                     </div>
                   </div>
                 </a>
@@ -183,7 +187,7 @@ export default class IndexPage extends React.Component {
         <section className="page-section bg-dark text-white" id="resume">
           <div className="container text-center">
             <h2 className="mb-4">Resume</h2>
-            <a className="btn btn-light" href="https://drive.google.com/file/d/1OKzBvVhTLSOkKz3AJRP1myOn8Na5JgV3/view?usp=sharing" target="-blank">Click to view or download resume</a>
+            <a className="btn btn-light" href="https://drive.google.com/file/d/1cexCqDHy2vUkVmrm6NETZRg4iQa8bJTk/view?usp=sharing" target="-blank">Click to view or download resume</a>
           </div>
         </section>
 
