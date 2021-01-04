@@ -142,14 +142,14 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
-                  <a href="https://www.youtube.com/watch?v=jX1ZJ6SBNWk&t=12s" target="-blank">
-                  <h5 className="mt-2">React JS Project<i class="fas fa-file-code ml-2"></i></h5>
+                  <a href="https://octacat.netlify.app/" target="-blank">
+                  <h5 className="mt-2">Github Finder<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="images/portfolio/fullsize/4.jpg" onClick={this.handlePortfolioClick.bind(this, 3)}>
                   <Img fluid={this.props.data.images.edges[3].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
                     <div className="project-name">
-                      A project for a mock rescue cat cafe using React JS and Reactstrap
+                      Github Finder app using React JS w/ the Context API and React Hooks.
                     </div>
                   </div>
                 </a>
