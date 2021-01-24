@@ -65,6 +65,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">CSS3</p>
                   <p className="text-muted mb-0">Javascript</p>
                   <p className="text-muted mb-0">Bootstrap</p>
+                  <p className="text-muted mb-0">Netlify</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -74,6 +75,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">React Native</p>
                   <p className="text-muted mb-0">Expo</p>
                   <p className="text-muted mb-0">Android Studio</p>
+                  <p className="text-muted mb-0">Redux</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -83,6 +85,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">GIT</p>
                   <p className="text-muted mb-0">Webpack</p>
                   <p className="text-muted mb-0">Gatsby JS</p>
+                  <p className="text-muted mb-0">Dato CMS</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -92,6 +95,7 @@ export default class IndexPage extends React.Component {
                   <p className="text-muted mb-0">Express</p>
                   <p className="text-muted mb-0">Mongo DB</p>
                   <p className="text-muted mb-0">Graph QL</p>
+                  <p className="text-muted mb-0">Heroku</p>
                 </div>
               </div>
             </div>
@@ -103,7 +107,7 @@ export default class IndexPage extends React.Component {
             <div className="row no-gutters">
               <div className="col-lg-4 col-sm-6">
                   <a href="https://mighty-sierra-51681.herokuapp.com/" target="-blank">
-                    <h5 className="mt-2">MERN Project<i class="fas fa-file-code ml-2"></i></h5>
+                    <h5 className="mt-2">Shopping List App v-1.0<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
                   <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid}/>
@@ -155,14 +159,14 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
               <div className="col-lg-4 col-sm-6">
-                  <a href="https://github.com/Cvan23/micro-crud" target="-blank">
-                  <h5 className="mt-2">CRUD App with Webpack<i class="fas fa-file-code ml-2"></i></h5>
+                  <a href="https://polar-shore-13026.herokuapp.com/register" target="-blank">
+                  <h5 className="mt-2">Contact Keeper App v-1.0<i class="fas fa-file-code ml-2"></i></h5>
                   </a>
                 <a className="portfolio-box" href="img/portfolio/fullsize/5.jpg" onClick={this.handlePortfolioClick.bind(this, 4)}>
                   <Img fluid={this.props.data.images.edges[4].node.childImageSharp.fluid}/>
                   <div className="portfolio-box-caption">
                     <div className="project-name">
-                      A Micropost CRUD app using REST API, ES6 Modules and Webpack
+                      A Contact Keeper app I built and deployed using the MERN stack with React Hooks and Context API. It has full CRUD capability and authentication. 
                     </div>
                   </div>
                 </a>
